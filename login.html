@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Login Information</legend>
+        
+    <h1>Login</h1>
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name">
+    <br><br>
+<label for="email">Email:</label>
+    <input type="email" id="email" name="mail">
+    <br><br>
+
+    <label for="pass">password:</label>
+    <input type="password" id="pass" name="password" placeholder="Enter Password" title="atleast 6 character long">
+    <br><br>
+     <label for="captcha">Enter Captcha:</label>
+        <input type="text" id="captcha" name="captcha" required>
+        <br><br>
+
+    </fieldset>
+
+    <fieldset>
+        
+    <legend>Checkbox</legend>
+    <label for="">Choose:</label>
+    <label for="htm"><input type="checkbox" name="option1" id="htm" value="html"  required>
+    HTML
+    </label>
+
+
+    <label for=""><input type="checkbox" name="option2" value="css" checked>
+    CSS
+    </label>
+
+    <label for=""><input type="checkbox" name="option3" value="JS">
+    JS
+    </label>
+    <br><br>
+
+    <label >
+        <input type="radio" name="Gender" value="male">Male
+    </label>
+
+    <label >
+        <input type="radio" name="Gender" value="female">Female
+    </label>
+    <br><br>
+    <label for="file"> upload file</label><br><br>
+    <input type="file" name="Upload" accept=".png,.pdf" id="file"><br><br>
+    <br>
+    <label for="range">Rate Yourself:</label>
+    <input type="range" name="value" id="range" min="1" max="10">
+    </fieldset>
+<br><br>
+    <input type="color">
+
+    <br><br>
+    <input type="date">
+
+    <br><br>
+    <input type="datetime">
+
+    <br><br>
+    <input type="datetime-local">
+
+    <br><br>
+    <input type="month">
+
+    <br><br>
+    <input type="search">
+
+    <br><br>
+    <input type="week">
+
+   <br><br>
+
+
+   <fieldset>
+    <legend>Dropdown</legend>
+   
+   <label for="tech">Select Tech:</label>
+   <select name="tech" id="tech">
+    <option value="java">Java</option>
+    <option value="front">Front-end</option>
+    <option value="css">CSS</option>
+
+   </select><br><br>
+
+   </fieldset>
+    <input type="submit"><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>MyMusic</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#player">Player</a></li>
+      <li><a href="#playlist">Playlist</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Feel the Music 🎶</h2>
+    <p>Play your favorite songs with our sleek player</p>
+  </section>
+
+  <!-- Music Player -->
+  <section class="player" id="player">
+    <img src="https://picsum.photos/350/200?random=1" id="cover" alt="Cover">
+    <div class="song-title" id="title">Song Title</div>
+    <div class="progress">
+      <input type="range" id="progress" value="0">
+    </div>
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭</button>
+    </div>
+    <audio id="audio"></audio>
+  </section>
+
+  <!-- Playlist -->
+  <section class="playlist" id="playlist">
+    <h3>Playlist</h3>
+    <div class="song" onclick="loadSong(0)">🎵 Song One</div>
+    <div class="song" onclick="loadSong(1)">🎵 Song Two</div>
+    <div class="song" onclick="loadSong(2)">🎵 Song Three</div>
+  </section>
+
+  <!-- Contact -->
+  <section class="hero" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@mymusic.com</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

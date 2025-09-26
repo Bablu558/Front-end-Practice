@@ -1,0 +1,176 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Incredible India Trips</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    header {
+      text-align: center;
+      background: linear-gradient(45deg, #ff80ab, #fce4ec);
+      padding: 25px 10px;
+      border-radius: 8px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #5a189a;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #f7e6ff;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5a189a;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #5a189a;
+      color: white;
+    }
+
+    main {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      animation: slideUp 1.2s ease;
+    }
+
+    main h2 {
+      color: #5a189a;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #5a189a;
+      box-shadow: 0 0 8px rgba(90,24,154,0.3);
+      outline: none;
+    }
+
+    button {
+      padding: 12px;
+      background: #5a189a;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: #7b2cbf;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f7e6ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Reach out anytime.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/19-09/Mini-Destination-Project/index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Get in Touch</h2>
+      <form>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Incredible India Trips. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

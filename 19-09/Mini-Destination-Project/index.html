@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Incredible India</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+        }
+
+        header, nav, main, section, aside, article, footer {
+            border: 2px solid #5a189a;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for all blocks */
+        header:hover, nav:hover, section:hover, article:hover, aside:hover, footer:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(45deg, #ff80ab, #fce4ec);
+            border-color: #ff4081;
+            padding: 25px 10px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #5a189a;
+            font-weight: bold;
+            animation: slideIn 1.5s ease;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        nav {
+            background-color: #f7e6ff;
+            animation: fadeIn 2s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5a189a;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #5a189a;
+            color: white;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 20px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 2;
+            background-color: #f7e6ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        section, article {
+            background-color: #fff;
+            padding: 20px;
+            border-color: #5a189a;
+            border-radius: 6px;
+        }
+
+        section h2, article h2 {
+            color: #5a189a;
+        }
+
+        aside {
+            background-color: #f7e6ff;
+            flex: 1;
+            padding: 20px;
+            border-color: #5a189a;
+            border-radius: 6px;
+        }
+
+        aside h3 {
+            color: #5a189a;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f7e6ff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #5a189a;
+            font-weight: bold;
+            margin: 0 8px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ff4081;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>All INDIA TRIPS</h1>
+            <p>Discover India's culture, heritage, food, and landscapes – all in one journey.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="/19-09/Mini-Destination-Project/practice.html">Home</a></li>
+                <li><a href="/19-09/Mini-Destination-Project/sub-html/destinations.html">Destinations</a></li>
+                <li><a href="/19-09/Mini-Destination-Project/sub-html/packages.html">Packages</a></li>
+                <li><a href="/19-09/Mini-Destination-Project/sub-html/tips.html">Travel Tips</a></li>
+                <li><a href="/19-09/Mini-Destination-Project/sub-html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <main>
+                <section>
+                    <h2>Featured Destination: Jaipur – The Pink City</h2>
+                    <p>Experience the royal palaces, vibrant bazaars, and Rajasthani culture in Jaipur. 
+                    Visit Amer Fort, City Palace, and shop colourful handicrafts at Johari Bazaar.</p>
+                </section>
+
+                <section>
+                    <h2>Adventure of the Month: Goa Beaches</h2>
+                    <p>From sunrise yoga on  Beach to vibrant night life at Baga Beach, Goa is the perfect mix of relaxation and fun. Don’t miss Goan seafood and flea markets.</p>
+                </section>
+
+                <article>
+                    <h2>Top 5 Indian Road Trips</h2>
+                    <ol>
+                        <li><strong>Manali to Leh:</strong> Scenic Himalayan valleys and high mountain passes.</li>
+                        <li><strong>Mumbai to Goa:</strong> Coastal highway with Konkan beauty.</li>
+                        <li><strong>Jaipur to Jaisalmer:</strong> Desert forts, sand dunes, and camel rides.</li>
+                        <li><strong>Shillong to Cherrapunji:</strong> Lush green landscapes and waterfalls.</li>
+                        <li><strong>Delhi to Agra via Yamuna Expressway:</strong> Taj Mahal weekend trip.</li>
+                    </ol>
+                </article>
+
+                <article>
+                    <h2>Quick Travel Tips</h2>
+                    <ul>
+                        <li>Keep cash handy, as rural areas may not accept cards/UPI.</li>
+                        <li>Carry a reusable water bottle to avoid dehydration.</li>
+                        <li>Respect dress codes while visiting temples and mosques.</li>
+                        <li>Try local street food  from pani puri to dosa.</li>
+                        <li>Always bargain politely in local markets.</li>
+                    </ul>
+                </article>
+            </main>
+
+            <aside>
+                <h3>Popular Indian Trips</h3>
+                <ul>
+                    <li>Kashmir Heaven on Earth</li>
+                    <li>Kerala Backwaters</li>
+                    <li>Varanasi Ganga Aarti</li>
+                    <li>Ranthambore Tiger Safari</li>
+                    <li>Golden Temple, Amritsar</li>
+                </ul>
+
+                <h3>Upcoming Festivals</h3>
+                <p>🎉 Navratri  Gujarat</p>
+                <p>🪔 Diwali  All Over India</p>
+                <p>🎭 Pushkar Camel Fair  Rajasthan</p>
+            </aside>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Incredible India Trips. All rights reserved.</p>
+            <p>Follow us: 
+                <a href="#">Instagram</a> | 
+                <a href="#">Facebook</a> | 
+                <a href="#">YouTube</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

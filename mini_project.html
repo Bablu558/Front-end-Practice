@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jewelry Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #c0a060, #e6d39f);
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 1.2em;
+    }
+    /* Hero Section */
+    .hero {
+    width: 100%;
+  background-color: #fff7e6;
+  display: flex;
+  justify-content: space-between; /* text left, video right side */
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  }
+  section:not(.hero) {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+  .hero-text {
+    max-width: 500px;
+  flex: 1;
+  text-align: left;
+  }
+  .hero-text h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+  }
+  .hero-text p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  .hero video {
+    width: 800px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+  }
+  .hero-video {
+  flex: 1;
+  text-align: center;
+}
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    /* Image gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 13px;
+
+    }
+    .gallery a img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #0ce3f2;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery a img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      
+    }
+    /* Media section */
+    .media {
+      margin-top: 40px;
+      text-align: center;
+    }
+    audio {
+      margin-top: 15px;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+    }
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /*table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }*/
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>💎 IK Jewelry</h1>
+    <p>Beautiful Ornaments for Every Occasion</p>
+  </header>
+
+  <!-- Hero Section with Video -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Discover Our Exclusive Collection</h2>
+      <p>Watch our jewelry showcase video and experience the shine & elegance before buying.</p>
+    </div>
+    <div class="hero-video">
+    <video width="500" controls autoplay muted loop>
+      <source src="media/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section>
+    <h2>Our Collection</h2>
+    <p>We provide the best quality jewelry pieces. Have a look at some of them:</p>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+      <a href="https://unsplash.com/photos/three-gold-colored-studded-rings-zZLhoEwGCeM">
+        <img src="media/gold.avif" alt="Gold Ring">
+      </a>
+      <a href="https://unsplash.com/photos/a-gold-ring-on-a-white-surface-_hGwNjIxjnY">
+        <img src="media/nec.avif" alt="Necklace">
+      </a>
+      <a href="https://unsplash.com/photos/silver-and-brown-beaded-bracelet-Asngw4A5_tM">
+        <img src="media/earing.avif" alt="Earring">
+      </a>
+      <a href="https://www.pexels.com/photo/gold-plated-accessories-248077/">
+        <img src="media/gg.jpg" alt="Earring">
+      </a>
+      <a href="https://www.pexels.com/photo/shallow-focus-photography-of-woman-in-red-top-1446161/">
+        <img src="media/w.jpg" alt="Earring">
+      </a>
+
+
+
+
+      <a href="https://www.pexels.com/photo/close-up-photo-of-diamond-ring-2735981/">
+        <img src="media/d.jpg" alt="diamond Ring">
+      </a>
+      <a href="https://www.pexels.com/photo/man-wearing-fedora-hat-1687719/">
+        <img src="media/nn.jpg" alt="wearing">
+      </a>
+      <a href="https://www.pexels.com/photo/close-up-photography-of-jewelry-3641056/">
+        <img src="media/brac.jpg" alt="bracelet">
+      </a>
+      <a href="https://www.pexels.com/photo/gold-plated-accessories-248077/">
+        <img src="media/gg.jpg" alt="gold">
+      </a>
+      
+    </div>
+
+    <!-- Table -->
+    <h3>Price List</h3>
+    <table border="1">
+      <tr>
+        <th>Item</th>
+        <th>Material</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Ring</td>
+        <td>Gold</td>
+        <td>₹ 15,000</td>
+      </tr>
+      <tr>
+        <td>Necklace</td>
+        <td>Silver</td>
+        <td>₹ 10,000</td>
+      </tr>
+      <tr>
+        <td>Earrings</td>
+        <td>Gold</td>
+        <td>₹ 7,000</td>
+      </tr>
+    </table>
+
+    <!-- Audio -->
+    <div class="media">
+      <h3>Jewelry Ad Jingle</h3>
+      <audio controls autoplay muted>
+        <source src="media/audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 IK Jewelry. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
