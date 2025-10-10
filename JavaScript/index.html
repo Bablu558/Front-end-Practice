@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
-   <script src="script.js"></script>
+   <!-- <script src="script.js"></script> -->
+     <script src="array.js"></script>
 </head>
 <body>
     
     <!-- <button onclick="showMessage()">Click Me</button> -->
-
+<button id="myButton">Click Me</button>
     <!-- <script>
         document.writeln("Hello Js");
         function showMessage() {
             alert("Button Was Clicked:")
+        
         }
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', () => {
+            button.style.backgroundColor = 'orange';
+            //alert('Button was clicked!');
+        });
+        
     </script> -->
 </body>
 </html>
